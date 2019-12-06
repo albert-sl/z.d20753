@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body> 
+    <h1>A Simple Form</h1>
+    <h2>Form fundamentals</h2>
+<form>
+ <fieldset>
+   <legend>Customer Info</legend>
+   Name: <input type="text" name="name" placeholder="Enter your name" autofocus required>
+   <br>
+   <br>
+   Telephone: <input type="text" name="tel" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required> 
+   <br>
+   <br>
+   Email address: <input type="text" name="email" placeholder="Enter your email address" required>
+
+</fieldset>
+<fieldset>
+    <legend>Books</legend>
+    <input list="books" name="books">
+    <datalist id="books">
+        <option value="Tomasz Cichocki „Zew oceanu”">
+        <option value="Eric Weiner „Geografia szczęścia”">
+        <option value="Paulina Wilk „Lalki w ogniu”">
+        <option value="Emilia i Szymon Sokolikowie „Do Santiago”">
+        <option value="Boris Reitschuster „Ruski ekstrem”">
+
+
+
+    </datalist> Quantiry(Maximum 5): <input type="number" id="quantity" min="1" max="5">
+    
+
+</fieldset>
+
+<input type="submit">
+</form>
+    
+</body>
+</html>
